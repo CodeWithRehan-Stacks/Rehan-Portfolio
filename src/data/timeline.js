@@ -1,0 +1,51 @@
+export const TIMELINE = [
+  {
+    id: 1,
+    year: '2019',
+    title: 'Started Learning Code',
+    description: 'Began the journey into web development with HTML, CSS, and JavaScript',
+    icon: '📚',
+  },
+  {
+    id: 2,
+    year: '2020',
+    title: 'Built First Project',
+    description: 'Created portfolio website and started contributing to open source',
+    icon: '🚀',
+  },
+  {
+    id: 3,
+    year: '2021',
+    title: 'Explored AI & ML',
+    description: 'Dived into artificial intelligence and machine learning technologies',
+    icon: '🤖',
+  },
+  {
+    id: 4,
+    year: '2022',
+    title: 'Startup Dreams Begin',
+    description: 'Started working on first startup idea with a small team',
+    icon: '💡',
+  },
+  {
+    id: 5,
+    year: '2023',
+    title: 'Building Products',
+    description: 'Launched multiple products and gained entrepreneurial experience',
+    icon: '⚡',
+  },
+  {
+    id: 6,
+    year: '2024',
+    title: 'Digital Freedom Advocate',
+    description: 'Focused on creating tools for digital freedom and cybersecurity',
+    icon: '🛡️',
+  },
+  {
+    id: 7,
+    year: '2025',
+    title: 'Future Entrepreneur',
+    description: 'Building scalable solutions that empower millions globally',
+    icon: '🌍',
+  },
+];
