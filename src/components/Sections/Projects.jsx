@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { PROJECTS } from '../../data/projects';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -71,7 +72,7 @@ const ProjectsSection = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-all duration-300"
                     >
-                      <Github size={20} />
+                      <FaGithub size={20} />
                       Code
                     </a>
                     <a

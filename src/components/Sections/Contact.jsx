@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -146,7 +147,7 @@ const ContactSection = () => {
               className="group p-6 rounded-lg bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-cyan-500/50 transition-all duration-300"
             >
               <div className="flex items-center gap-4">
-                <Linkedin className="text-cyan-400 group-hover:scale-110 transition-transform" size={24} />
+                <FaLinkedin className="text-cyan-400 group-hover:scale-110 transition-transform" size={24} />
                 <div>
                   <p className="text-sm text-gray-400">LinkedIn</p>
                   <p className="text-white font-semibold">Muhammad Rehan</p>
@@ -161,7 +162,7 @@ const ContactSection = () => {
               className="group p-6 rounded-lg bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-cyan-500/50 transition-all duration-300"
             >
               <div className="flex items-center gap-4">
-                <Github className="text-cyan-400 group-hover:scale-110 transition-transform" size={24} />
+                <FaGithub className="text-cyan-400 group-hover:scale-110 transition-transform" size={24} />
                 <div>
                   <p className="text-sm text-gray-400">GitHub</p>
                   <p className="text-white font-semibold">CodeWithRehan-Stacks</p>

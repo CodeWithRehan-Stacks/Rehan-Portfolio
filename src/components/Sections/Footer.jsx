@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Mail, ExternalLink } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/CodeWithRehan-Stacks', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-rehan-b7110a362/', label: 'LinkedIn' },
+    { icon: FaGithub, href: 'https://github.com/CodeWithRehan-Stacks', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/muhammad-rehan-b7110a362/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:contact@rehan.dev', label: 'Email' },
   ];
 
