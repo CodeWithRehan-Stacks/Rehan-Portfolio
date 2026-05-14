@@ -1,39 +1,31 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Lenis from 'lenis';
 
-export const SmoothScrollProvider = ({ children }) => {
-  const lenisRef = useRef(null);
-
+export function SmoothScrollProvider({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Apple-like easing
       direction: 'vertical',
       gestureDirection: 'vertical',
       smooth: true,
+      mouseMultiplier: 1,
       smoothTouch: false,
       touchMultiplier: 2,
+      infinite: false,
     });
 
-    lenisRef.current = lenis;
-
-    const handleFrame = (time) => {
+    function raf(time) {
       lenis.raf(time);
-    };
+      requestAnimationFrame(raf);
+    }
 
-    let animationFrameId;
-    const animate = () => {
-      animationFrameId = requestAnimationFrame(animate);
-      lenis.raf(Date.now());
-    };
-
-    animate();
+    requestAnimationFrame(raf);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
       lenis.destroy();
     };
   }, []);
 
   return <>{children}</>;
-};
+}

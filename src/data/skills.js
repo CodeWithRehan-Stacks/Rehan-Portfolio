@@ -1,5 +1,5 @@
 import { FaReact, FaPython, FaLaravel } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiAi } from 'react-icons/si';
+import { SiJavascript, SiTailwindcss, SiOpenai } from 'react-icons/si';
 import { MdApi, MdShield, MdLightbulb } from 'react-icons/md';
 
 export const SKILLS = [
@@ -47,7 +47,7 @@ export const SKILLS = [
     id: 6,
     name: 'AI Tools',
     category: 'AI/ML',
-    icon: SiAi,
+    icon: SiOpenai,
     proficiency: 80,
     color: '#00d9ff',
   },
